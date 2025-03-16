@@ -1,0 +1,123 @@
+/* === Global Styles === */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Container Styling === */
+.dashboard-container {
+  width: 90%;
+  max-width: 900px; /* Slightly increased width for better spacing */
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* === Title Styling === */
+h2 {
+  font-size: 24px;
+  color: #2C3E50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* === Dropdown Container (Flexbox for Horizontal Layout) === */
+.selection-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  align-items: center;
+  margin-top: 15px;
+}
+
+.selection-container div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* === Dropdown Styling === */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 180px; /* Fixed width for better horizontal alignment */
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  transition: 0.3s;
+}
+
+select:hover {
+  border-color: #2C3E50;
+}
+
+/* === Chart Container === */
+.chart-container {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* === Button Styling (If Needed) === */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* === Fade-in Animation === */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  .dashboard-container {
+      width: 95%;
+      padding: 20px;
+  }
+
+  .selection-container {
+      flex-direction: column; /* Stacks dropdowns on smaller screens */
+      gap: 10px;
+  }
+
+  select {
+      width: 100%;
+  }
+}
