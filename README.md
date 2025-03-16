@@ -15,6 +15,7 @@ This project is a **Crime Data Analysis Dashboard** for Telangana. It allows use
 ### 📊 Crime Chart View
 ![Crime Chart Screenshot]
 ![WhatsApp Image 2025-03-16 at 11 46 09_4719b148](https://github.com/user-attachments/assets/8d614f1c-f256-4e4a-9e0b-d018b2e9aef8)
+![WhatsApp Image 2025-03-16 at 11 46 48_32d35565](https://github.com/user-attachments/assets/0059c4aa-a51c-4cff-b1e4-175ea0a62f14)
 
 
 ## 🏗️ Tech Stack
