@@ -1,0 +1,17 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore Python virtual environment (if using one)
+venv/
+__pycache__/
+
+# Ignore environment files
+.env
+
+# Ignore database files (if any)
+*.sqlite3
+*.db
+
+# Ignore build artifacts
+dist/
+
