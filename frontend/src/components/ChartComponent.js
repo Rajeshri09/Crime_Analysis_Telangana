@@ -30,12 +30,10 @@ const ChartComponent = ({ selectedDistrict, selectedCrimeType, chartType }) => {
   return (
     <div>
       <h2>Crime Trend Chart</h2>
-      {chartData ? (
+      {chartData && (
         chartType === "bar" ? <Bar data={chartData} />
         : chartType === "pie" ? <Pie data={chartData} />
         : <Line data={chartData} />
-      ) : (
-        <p>Select District, Crime Type, and Chart Type</p>
       )}
     </div>
   );
